@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>karlmatth's projects</title>
+<meta name="description" content="Tools and projects by karlmatth, including a gear progression guide for Realm of the Mad God.">
+<style>
+:root {
+  --bg: #f4f2ee; --panel: #ffffff; --text: #1d1b19; --muted: #6b655d; --line: #e2ddd5; --accent: #b4441b;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #15130f; --panel: #1f1c18; --text: #ece7df; --muted: #a39b8f; --line: #36312a; --accent: #ef7a45;
+}}
+:root[data-theme="dark"] {
+  --bg: #15130f; --panel: #1f1c18; --text: #ece7df; --muted: #a39b8f; --line: #36312a; --accent: #ef7a45;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 15px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 56px 16px 64px; }
+h1 { font-size: 28px; margin: 0 0 8px; letter-spacing: -.01em; }
+.lead { color: var(--muted); margin: 0 0 36px; max-width: 560px; }
+h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 12px; }
+.card { display: block; background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+  padding: 18px 20px; text-decoration: none; color: inherit; transition: border-color .15s; }
+.card:hover, .card:focus-visible { border-color: var(--accent); }
+.card h3 { margin: 0 0 6px; font-size: 18px; }
+.card h3 span { color: var(--accent); }
+.card p { margin: 0 0 10px; color: var(--muted); }
+.card ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: 14px; }
+.card .go { display: inline-block; margin-top: 12px; color: var(--accent); font-weight: 600; font-size: 14px; }
+footer { margin-top: 48px; color: var(--muted); font-size: 13px; }
+footer a { color: inherit; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>karlmatth's projects</h1>
+  <p class="lead">Small tools I build for games I play. Everything here runs in your browser, free to use.</p>
+
+  <h2>Tools</h2>
+  <a class="card" href="/rotmg-progression-guide/">
+    <h3>RotMG Progression Guide <span>→</span></h3>
+    <p>Plan your gear in Realm of the Mad God, class by class. It suggests the next weapon, ability, armor and ring
+      to aim for, balancing damage against how hard each item is to get.</p>
+    <ul>
+      <li>Weapon DPS from each class's max stats, including armor piercing, multi-shot and burst weapons</li>
+      <li>Difficulty from the dungeon each item drops in, with extra weight for rare biome and event whites</li>
+      <li>A checklist that saves the items you've got and hides what you've outgrown</li>
+    </ul>
+    <span class="go">Open the guide</span>
+  </a>
+
+  <footer>
+    Item data comes from the <a href="https://www.realmeye.com/wiki/realm-of-the-mad-god" rel="noopener">RealmEye wiki</a>.
+    Not affiliated with RealmEye or the developers of Realm of the Mad God.
+  </footer>
+</div>
+</body>
+</html>
